@@ -14,19 +14,19 @@ Domain controller OS: Windows server 2022
 Client OS: Windows 11 Education
 Domain name: ravigill.local
 
-1. After creating a VM with the intention of being the domain controller i first set a static IP and DNS for the machine, as it will be the DNS for connected client machines. 
+## 1. After creating a VM with the intention of being the domain controller i first set a static IP and DNS for the machine, as it will be the DNS for connected client machines. 
 
 ![Setting Static IP and DNS](images/01.png)
 
 ![CMD showing IP after setting](images/02.png)
 
-2. Proceeded to install the necessary features to implement AD DS on the OS using the wizard. 
+## 2. Proceeded to install the necessary features to implement AD DS on the OS using the wizard. 
 
 ![Adding AD DS to OS](images/03.png)
 
 ![Deploying the changes to make the VM into the domain controller](images/04.png)
 
-3. Created a user and a group named marketing, and added the user to the group. 
+## 3. Created a user and a group named marketing, and added the user to the group. 
 
 ![Creating User](images/05.png)
 ![Creating Marketing group](images/07.png)
@@ -34,7 +34,7 @@ Domain name: ravigill.local
 ![Adding the newly created user to the marketing group](images/08.png)
 
 
-4. Shared a group called Marketing data on the network, and assigned permissions to the marketing group to view the contents of this folder. 
+## 4. Shared a group called Marketing data on the network, and assigned permissions to the marketing group to view the contents of this folder. 
 
 ![Setting up file share on the Marketing data folder](images/09.png)
 
@@ -43,13 +43,13 @@ Domain name: ravigill.local
 ![Security permissions showing the Ravigill\Marketing now has permissions to access this folder](images/11.png)
 
 
-5. Created new Organizational units based on locations named Bergen and Oslo. Also created child organizational units for both locations named users and computers.
+## 5. Created new Organizational units based on locations named Bergen and Oslo. Also created child organizational units for both locations named users and computers.
 
 ![Creating First OU](images/12.png)
 
 ![Final heirarchy of newly created OU](images/13.png)
 
-6. Set up a new VM with windows 11 Education and connected it to the server through the previously created domain controller. 
+## 6. Set up a new VM with windows 11 Education and connected it to the server through the previously created domain controller. 
 
 ![Assigning DNS IP on the new client machine to point towards the domain controller](images/14.png)
 
@@ -61,11 +61,11 @@ Domain name: ravigill.local
 
 ![After restarting the client VM it is now part of the domain and since i connected using the admin account it has access to the Marketing Data folder created earlier](images/18.png)
 
-7. Moved the now connected Client VM to the Oslo/Computers OU for clarity and easier management
+## 7. Moved the now connected Client VM to the Oslo/Computers OU for clarity and easier management
 
 ![Client VM now in the correct OU](images/20.png)
 
-8. Created a GPO named Test_policy to Oslo/computers OU to force a specific default lock screen and logon image and prevent changing lock screen and logon image. 
+## 8. Created a GPO named Test_policy to Oslo/computers OU to force a specific default lock screen and logon image and prevent changing lock screen and logon image. 
 
 ![Choosing the policy from Group policy management Editor](images/22.png)
 
