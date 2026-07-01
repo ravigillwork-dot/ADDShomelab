@@ -1,18 +1,18 @@
-This project documents the setup and configuration of Active Directory Domain Services (AD DS) in a lab/virtual environment, including Organizational Unit (OU) structure, Group Policy Objects (GPOs), and policy enforcement testing
+## This project documents the setup and configuration of Active Directory Domain Services (AD DS) in a lab/virtual environment, including Organizational Unit (OU) structure, Group Policy Objects (GPOs), and policy enforcement testing
 
-The goal of this project was to gain experience and comfort with AD DS as a tool and gain hands on experience with: 
+## The goal of this project was to gain experience and comfort with AD DS as a tool and gain hands on experience with: 
 
-Setting up AD DS and a domain controller on a virtual machine set up with Windows server 2022
-Creating Objects/Users in Active directory and assigning Directory groups 
-Create network shared folders and assign permissions for specific scopes
-Create a logical heirarchy of Organizational units and apply a policy to a specified OU
-Create a Client machine and join it to the domain
+### Setting up AD DS and a domain controller on a virtual machine set up with Windows server 2022
+### Creating Objects/Users in Active directory and assigning Directory groups 
+### Create network shared folders and assign permissions for specific scopes
+### Create a logical heirarchy of Organizational units and apply a policy to a specified OU
+### Create a Client machine and join it to the domain
 
-Enviorment: 
-Platform: VMware workstation pro
-Domain controller OS: Windows server 2022
-Client OS: Windows 11 Education
-Domain name: ravigill.local
+## Enviorment: 
+### Platform: VMware workstation pro
+### Domain controller OS: Windows server 2022
+### Client OS: Windows 11 Education
+### Domain name: ravigill.local
 
 ## 1. After creating a VM with the intention of being the domain controller i first set a static IP and DNS for the machine, as it will be the DNS for connected client machines. 
 
