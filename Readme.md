@@ -113,7 +113,7 @@ Security permissions showing the Ravigill\Marketing now has permissions to acces
 
 ![Created a Image in Paint and the placed it in SYSVOL, then linked the path to the image in the policy rule](Images/24.png)
 
-### As i was running this homelab on a low resource enviorment i could not make the image properly load, but to confirm that the policy was correctly applied i used the CMD on the cliend VM to see what the OS recognises as the lock screen image.
+### As i was running this homelab on a low resource enviorment i could not make the image properly load, but to confirm that the policy was correctly applied i used the CMD on the client VM to see what the OS recognises as the lock screen image.
 
 ### CMD output for lock screen image
 
