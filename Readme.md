@@ -16,51 +16,51 @@
 
 ## 1. After creating a VM with the intention of being the domain controller i first set a static IP and DNS for the machine, as it will be the DNS for connected client machines. 
 
-Setting Static IP and DNS
+### Setting Static IP and DNS
 
 ![Setting Static IP and DNS](Images/01.png)
 
-CMD showing IP after setting
+### CMD showing IP after setting
 
 ![CMD showing IP after setting](Images/02.png)
 
 ## 2. Proceeded to install the necessary features to implement AD DS on the OS using the wizard. 
 
-Adding AD DS to OS
+### Adding AD DS to OS
 
 ![Adding AD DS to OS](Images/03.png)
 
-Deploying the changes to make the VM into the domain controller
+### Deploying the changes to make the VM into the domain controller
 
 ![Deploying the changes to make the VM into the domain controller](Images/04.png)
 
 
 ## 3. Created a user and a group named marketing, and added the user to the group. 
 
-Creating User
+### Creating User
 
 ![Creating User](Images/05.png)
 
-Creating Marketing group
+### Creating Marketing group
 
 ![Creating Marketing group](Images/07.png)
 
-Adding the newly created user to the marketing group
+### Adding the newly created user to the marketing group
 
 ![Adding the newly created user to the marketing group](Images/08.png)
 
 
 ## 4. Shared a group called Marketing data on the network, and assigned permissions to the marketing group to view the contents of this folder.
 
-Setting up file share on the Marketing data folder
+### Setting up file share on the Marketing data folder
 
 ![Setting up file share on the Marketing data folder](Images/09.png)
 
-Assigning permissions to Marketing group object to view the contents of the Marketing data folder
+### Assigning permissions to Marketing group object to view the contents of the Marketing data folder
 
 ![Assigning permissions to Marketing group object to view the contents of the Marketing data folder](Images/10.png)
 
-Security permissions showing the Ravigill\Marketing now has permissions to access this folder
+### Security permissions showing the Ravigill\Marketing now has permissions to access this folder
 
 ![Security permissions showing the Ravigill\Marketing now has permissions to access this folder](Images/11.png)
 
